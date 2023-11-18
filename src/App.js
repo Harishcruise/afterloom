@@ -1,10 +1,10 @@
 import { BackgroundWrapper } from "./components/backgroundWrapper";
-import { Button } from "./components/buttons";
+import { Header } from "./components/header";
 
 function App() {
   return (
     <BackgroundWrapper>
-       <Button>{'Schedule a call right now >>'}</Button>
+       <Header/>
     </BackgroundWrapper>
   );
 }
