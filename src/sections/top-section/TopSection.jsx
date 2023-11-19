@@ -1,6 +1,6 @@
 import React from 'react'
-import { Typography } from '../../components/typography'
-import { img1, img2, img3 } from '../../assets/images'
+import { Typography } from '../../components/typography';
+import { img1, img2, img3 } from '../../assets/images';
 
 function TopSection() {
   return (
