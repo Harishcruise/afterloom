@@ -1,7 +1,8 @@
 import React from 'react'
 import { Typography } from '../../components/typography'
 import { Card } from '../../components/card'
-const OfferSection = () => {
+
+const ServiceSection = () => {
   return (
     <div className='flex flex-1 flex-col w-full py-[52px]'>
         <div className='flex flex-col gap-3 '>
@@ -20,4 +21,4 @@ const OfferSection = () => {
   )
 }
 
-export default OfferSection
+export default ServiceSection
