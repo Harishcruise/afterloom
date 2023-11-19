@@ -1,3 +1,1 @@
-export {default as offerSection} from './offerSection';
-
-
+export {default as OfferSection} from './OfferSection'
