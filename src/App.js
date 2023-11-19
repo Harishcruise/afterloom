@@ -1,10 +1,10 @@
 import { BackgroundWrapper } from "./components/backgroundWrapper";
-import { Header } from "./components/header";
+import { TextReveal } from "./components/textSlider";
 
 function App() {
   return (
     <BackgroundWrapper>
-       <Header/>
+       <TextReveal/>
     </BackgroundWrapper>
   );
 }
