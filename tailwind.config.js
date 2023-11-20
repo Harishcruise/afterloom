@@ -4,6 +4,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    screens:{
+      'mobile':{'max':'480px'}
+    },
     extend: {},
     colors: {
       transparent: 'transparent',

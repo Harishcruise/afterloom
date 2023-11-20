@@ -12,16 +12,16 @@ function TopSection() {
        
        <div className='flex w-full justify-between py-6 flex-wrap'>
 
-        <div class="w-[435px] mt-20 h-[435px] overflow-hidden cursor-pointer rounded-md relative group hover:-translate-y-20 transition-transform duration-[400ms] ease-linear">
-          <img alt="" class="object-cover w-full aspect-square group-hover:scale-110 transition duration-[400ms] ease-in-out" src={img1}/>
+        <div className="w-[435px] mt-20 h-[435px] overflow-hidden cursor-pointer rounded-md relative group hover:-translate-y-20 transition-transform duration-[400ms] ease-linear">
+          <img alt="" className="object-cover w-full aspect-square group-hover:scale-110 transition duration-[400ms] ease-in-out" src={img1}/>
         </div>
 
-        <div class="w-[435px] mt-10 h-[435px] overflow-hidden cursor-pointer rounded-md relative group hover:-translate-y-10 transition-transform duration-[400ms] ease-linear">
-          <img alt="" class="object-cover w-full aspect-square group-hover:scale-110 transition duration-[400ms] ease-in-out" src={img2}/>
+        <div className="w-[435px] mt-10 h-[435px] overflow-hidden cursor-pointer rounded-md relative group hover:-translate-y-10 transition-transform duration-[400ms] ease-linear">
+          <img alt="" className="object-cover w-full aspect-square group-hover:scale-110 transition duration-[400ms] ease-in-out" src={img2}/>
         </div>
         
-        <div class="w-[435px] h-[435px] overflow-hidden cursor-pointer rounded-md relative group hover:translate-y-10 transition-transform duration-[400ms] ease-linear">
-          <img alt="" class="object-cover w-full aspect-square group-hover:scale-110 transition duration-[400ms] ease-in-out" src={img3}/>
+        <div className="w-[435px] h-[435px] overflow-hidden cursor-pointer rounded-md relative group hover:translate-y-10 transition-transform duration-[400ms] ease-linear">
+          <img alt="" className="object-cover w-full aspect-square group-hover:scale-110 transition duration-[400ms] ease-in-out" src={img3}/>
         </div>
 
        </div>

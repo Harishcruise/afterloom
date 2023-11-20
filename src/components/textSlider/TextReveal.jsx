@@ -2,7 +2,7 @@ import React,{ useEffect , useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
 import { Typography } from '../typography'
 
-const TextReveal = ({width="fit-content",children,type,color}) => {
+const TextReveal = ({width="fit-content",children,type,color,responsive}) => {
   
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
@@ -15,7 +15,7 @@ const TextReveal = ({width="fit-content",children,type,color}) => {
         mainControls.start("visible");
         sliderControls.start("visible");
       }
-    },[isInView]);
+    },[isInView,mainControls,sliderControls]);
 
   return (
     <div ref={ref} style={{width}} className='relative overflow-hidden'>
@@ -31,7 +31,7 @@ const TextReveal = ({width="fit-content",children,type,color}) => {
             delay:0.25
         }}
         >
-        <Typography type={type} color={color}>{children}</Typography>
+        <Typography responsive={responsive} type={type} color={color}>{children}</Typography>
         </motion.div>
         <motion.div
         variants={{
