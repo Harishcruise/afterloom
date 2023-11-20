@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typography } from '../../components/typography';
 import { img1, img2, img3 } from '../../assets/images';
+import { Button } from '../../components/buttons'
 
 function TopSection() {
   return (
@@ -8,6 +9,11 @@ function TopSection() {
         <div className='flex flex-col gap-3 '>
         <Typography type="bold36" color='text-light-100'>We build bridges through digital Experiences</Typography>
         <Typography type="regular16" color='text-grey-300'>We are a team of creative artists, help businesses to build high quality products.</Typography>
+        <div>
+        <Button responsive="true">
+          Schedule a call right now »
+        </Button>
+        </div>
         </div>
        
        <div className='flex w-full justify-between py-6 flex-wrap'>
