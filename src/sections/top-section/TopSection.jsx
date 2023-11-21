@@ -1,7 +1,8 @@
 import React from 'react'
 import { Typography } from '../../components/typography';
 import { img1, img2, img3 } from '../../assets/images';
-import { Button } from '../../components/buttons'
+import { Button } from '../../components/buttons';
+
 
 function TopSection() {
   return (
