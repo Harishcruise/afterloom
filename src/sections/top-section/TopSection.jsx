@@ -3,6 +3,7 @@ import { Typography } from '../../components/typography';
 import { img1, img2, img3 } from '../../assets/images';
 import { Button } from '../../components/buttons';
 
+
 function TopSection() {
   return (
     <div className='flex flex-1 flex-col w-full pt-[70px] pb-[52px]'>
