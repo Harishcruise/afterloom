@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography } from '../../components/typography'
 import { Button } from '../../components/buttons'
-import { ImageSlider } from '../../components/carousels'
+import { CardSlider } from '../../components/carousels'
 
 const ProjectSections = () => {
   return (
@@ -18,7 +18,8 @@ const ProjectSections = () => {
             </Button>
             
         </div>
-        <ImageSlider/>
+        {/* <ImageSlider/> */}
+        <CardSlider/>
     </div>
   )
 }

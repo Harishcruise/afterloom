@@ -70,11 +70,11 @@ function Typography({children,color,type,responsive=false}) {
     }
   }
   return (
-    <div>
+    <>
     <p style={{fontFamily:variant[type]["font"]}} className={variant[type]["style"]}>
         {children}
     </p>
-    </div>
+    </>
   )
 }
 

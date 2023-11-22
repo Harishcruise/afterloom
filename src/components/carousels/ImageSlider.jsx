@@ -25,11 +25,11 @@ const ImageSlider = () => {
     });
   };
 
-//   useEffect(()=>{
-//     setTimeout(()=>{
-//         handleNext();
-//     },[10000])
-//   })
+  useEffect(()=>{
+    setTimeout(()=>{
+        handleNext();
+    },[10000])
+  })
 
   const images = [img1,img2,img3,img1,img2,img3,img1];
 
