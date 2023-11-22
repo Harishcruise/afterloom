@@ -24,7 +24,8 @@ function Header() {
         <Typography type="regular20" color="text-light-100">Our Flow</Typography>
         </div>
        </div>:
-        <HeaderDropdown/>
+        // 
+        ""
         }
         
 
