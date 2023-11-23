@@ -1,8 +1,15 @@
 import React from 'react'
 import classNames from 'classnames'
 
-function Typography({children,color,type}) {
+function Typography({children,color,type,responsive=false}) {
   const variant = {
+    bold16:{
+      style:classNames({
+        'font-bold text-[16px] leading-[24px]':true,
+        [color]:true
+      }),
+      font:'Apercu-Pro-Bold'
+    },
     bold64:{
       style:classNames({
         'font-bold text-[64px] leading-[72px]':true,
@@ -19,8 +26,9 @@ function Typography({children,color,type}) {
     },
     light64:{
       style:classNames({
-        'font-light text-[64px] leading-[72px]':true,
-        [color]:true
+        'font-light text-[64px]  leading-[72px]':true,
+        [color]:true,
+        'mobile:text-[32px] mobile:leading-[40px]':responsive
       }),
       font:'Apercu-Pro-Light'
     },
@@ -42,6 +50,7 @@ function Typography({children,color,type}) {
       style:classNames({
         'font-normal text-[16px] leading-[24px]':true,
         [color]:true,
+        'mobile:text-[10px] mobile:leading-[18px]':responsive,
       }),
       font:'Apercu-Pro-Light'
     },
@@ -61,11 +70,11 @@ function Typography({children,color,type}) {
     }
   }
   return (
-    <div>
+    <>
     <p style={{fontFamily:variant[type]["font"]}} className={variant[type]["style"]}>
         {children}
     </p>
-    </div>
+    </>
   )
 }
 
