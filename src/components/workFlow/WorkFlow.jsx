@@ -14,7 +14,7 @@ const WorkFlow = ({title,desc,number,img}) => {
         }
       },[isInView,mainControls]);
   return (
-    <div className='flex flex-1 gap-32 mobile:gap-4 justify-between'>
+    <div ref={ref} className='flex flex-1 gap-32 mobile:gap-4 justify-between'>
         <div className='flex flex-col justify-between'>
             <TextReveal>
             <Typography type="bold36" color='text-light-100'>{title}</Typography>
@@ -28,7 +28,6 @@ const WorkFlow = ({title,desc,number,img}) => {
         </div>
 
         <motion.div 
-        ref={ref}
         variants={{
             initial:{ scale: 0.5,x: 300 },
             animate:{ scale: 1, x: 0 }
