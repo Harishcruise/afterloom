@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 @font-face {
   font-family: 'Apercu-Pro-Bold';
   src: local('Apercu-Pro-Bold'), url(./assets/fonts/Apercu-Pro-Bold.otf) format('opentype');
@@ -22,6 +34,11 @@
   src: local('Apercu-Pro-Regular'), url(./assets/fonts/Apercu-Pro-Regular.otf) format('opentype');
 }
 
+@font-face {
+  font-family: 'Apercu-Pro-Mono';
+  src: local('Apercu-Pro-Mono'), url(./assets/fonts/Apercu-Pro-Mono.otf) format('opentype');
+}
+
 body {
   margin: 0;
   font-family: 'Apercu-Pro-Regular';
@@ -30,7 +47,21 @@ body {
   background-color: #040404;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* .scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+} */
+
