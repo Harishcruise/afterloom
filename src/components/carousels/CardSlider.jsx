@@ -41,7 +41,7 @@ const CardSlider = () => {
             variants={cardVariants}
             initial="collapsed"
             animate={index === expandedIndex ? 'expanded': 'collapsed'}
-            transition={{duration: 0.7,easings:["easeIn", "easeOut"]}}
+            transition={{duration: 1,bounce:0.25}}
             onClick={() => handleCardClick(index)}
             style={{backgroundImage: `url(${cardImages[index]})`,}}
             >

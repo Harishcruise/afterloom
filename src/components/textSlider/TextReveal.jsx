@@ -1,8 +1,7 @@
 import React,{ useEffect , useRef } from 'react'
 import { motion, useInView, useAnimation } from "framer-motion"
-import { Typography } from '../typography'
 
-const TextReveal = ({width="fit-content",children,type,color,responsive}) => {
+const TextReveal = ({width="fit-content",children}) => {
   
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
@@ -31,7 +30,7 @@ const TextReveal = ({width="fit-content",children,type,color,responsive}) => {
             delay:0.25
         }}
         >
-        <Typography responsive={responsive} type={type} color={color}>{children}</Typography>
+        {children}
         </motion.div>
         <motion.div
         variants={{
