@@ -57,7 +57,8 @@ function Typography({children,color,type,responsive=false,underline='none'}) {
     regular20:{
       style:classNames({
         'font-normal text-[20px] leading-[28px]':true,
-        [color]:true
+        [color]:true,
+        'mobile:text-[10px] mobile:leading-[18px]':responsive,
       }),
       font:'Apercu-Pro-Regular'
     },
