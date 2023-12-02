@@ -6,6 +6,7 @@ import { ServiceSection } from "./sections/services-section";
 import { ProjectSections } from "./sections/project-section";
 import { OurFlowSection } from "./sections/our-flow-section";
 import { Typography } from "./components/typography";
+import Footer from "./components/footer/Footer";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       </TextReveal>
       <ProjectSections/>
       <OurFlowSection/>
+      <Footer/>
     </BackgroundWrapper>
   );
 }
