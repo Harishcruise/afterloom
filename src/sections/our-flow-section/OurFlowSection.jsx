@@ -1,6 +1,6 @@
 import React from 'react'
 import { WorkFlow } from '../../components/workFlow'
-import { img1, img2, img3 } from '../../assets/images'
+import { design, build, evolution } from '../../assets/images'
 
 const OurFlowSection = () => {
 
@@ -8,19 +8,19 @@ const OurFlowSection = () => {
         {
             title:"Design",
             desc:"Designing tomorrow's success, crafting today's impact. We create unforgettable brand stories that resonate with your audience.",
-            img:img1,
+            img:design,
             number:"01",
         },
         {
             title:"Build seamless",
             desc:"Designing tomorrow's success, crafting today's impact. We create unforgettable brand stories that resonate with your audience.",
-            img:img2,
+            img:build,
             number:"02",
         },
         {
             title:"Evolution",
             desc:"Designing tomorrow's success, crafting today's impact. We create unforgettable brand stories that resonate with your audience.",
-            img:img3,
+            img:evolution,
             number:"03",
         },
     ]

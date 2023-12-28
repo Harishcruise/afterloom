@@ -1,7 +1,7 @@
 import React from 'react'
 import { TextReveal } from '../textSlider'
 import { Typography } from '../typography'
-import { copy, whatsapp, call } from '../../assets/images'
+import { mail, whatsapp, form } from '../../assets/images'
 import { afterloom } from '../../assets/images'
 
 const Footer = () => {
@@ -16,20 +16,20 @@ const Footer = () => {
 
         <div className='flex w-full justify-between py-6 gap-4 flex-wrap'>
 
-            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
-                 <img src={copy} alt='' width={64} height={64} />
-                 <Typography type="regular20" color='text-light-100'>Copy our mail!</Typography>
-            </div>
+            <a href='mailto:afterloom20@gmail.com' className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
+                 <img src={mail} alt='' width={64} height={64} />
+                 <Typography type="regular20" color='text-light-100'>Mail us!</Typography>
+            </a>
 
-            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
+            <a href='mailto:afterloom20@gmail.com' className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
                  <img src={whatsapp} alt='' width={64} height={64} />
                  <Typography type="regular20" color='text-light-100'>Message us on Whatsapp!</Typography>
-            </div>
+            </a>
 
-            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
-                 <img src={call} alt='' width={64} height={64} />
-                 <Typography type="regular20" color='text-light-100'>Connect on call now!</Typography>
-            </div>
+            <a href='#tally-open=wgdQll&tally-emoji-text=👋&tally-emoji-animation=wave' className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
+                 <img src={form} alt='' width={64} height={64} />
+                 <Typography type="regular20" color='text-light-100'>Send us inquiries!</Typography>
+            </a>
 
         </div>
 

@@ -37,7 +37,7 @@ const WorkFlow = ({title,desc,number,img}) => {
         transition={{ duration: 0.9, delay: 0.1 }}
         className='flex'
         >
-        <img src={img} className='flex rounded-[20px] mobile:w-[600px] mobile:h-[180px] w-[900px] h-[610px]' alt=''/>
+        <img src={img} className='flex rounded-[20px] mobile:w-[600px] mobile:h-[180px] w-[900px] h-[410px]' alt=''/>
         </motion.div>
     </div>
   )
