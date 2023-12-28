@@ -1,10 +1,15 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { img1, img2, img3 } from '../../assets/images'
+import { useEffect, useRef, useState } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
+import { home, interior, invest, grow, hero, plant, fitness } from '../../assets/images'
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 
 const ImageSlider = () => {
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once: true});
+
   const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5, 6]);
+
 
   const handleNext = () => {
     setPositionIndexes((prevIndexes) => {
@@ -28,10 +33,10 @@ const ImageSlider = () => {
   useEffect(()=>{
     setTimeout(()=>{
         handleNext();
-    },[10000])
+    },[50000])
   })
 
-  const images = [img1,img2,img3,img1,img2,img3,img1];
+  const images = [home, interior, invest, grow, hero, plant, fitness];
 
   const positions = ["center","left2", "left1", "left", "right", "right1","right2"];
 
@@ -45,17 +50,17 @@ const ImageSlider = () => {
     right2: { x: "30%", scale: 0.9, zIndex: 4 },
   };
   return (
-    <div className="flex items-center flex-col justify-center h-[700px] mobile:h-[200px]">
+    <div ref={ref} className="flex items-center flex-col justify-center h-[700px] mobile:h-[300px]">
       {images.map((image, index) => (
         <motion.img
           key={index}
           src={image}
           alt={image}
           className="rounded-[12px]"
-          initial="center"
-          animate={positions[positionIndexes[index]]}
+          initial={"center"}
+          animate={isInView?positions[positionIndexes[index]]:"center"}
           variants={imageVariants}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay:0.3 }}
           style={{ width: "40%", position: "absolute" }}
         />
       ))}

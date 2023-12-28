@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {motion} from 'framer-motion'
-import { img1, img2, img3, img4, img7, img8, img9 } from '../../assets/images'
+import { home, interior, invest, grow, hero, plant, fitness } from '../../assets/images'
 // import { Typography } from '../typography'
 
 const CardSlider = () => {
@@ -11,7 +11,7 @@ const CardSlider = () => {
       setExpandedIndex(index === expandedIndex ? -1 : index)
     }
 
-    const cardImages = [img1,img2,img3,img4,img7,img8,img9];
+    const cardImages = [home, interior, invest, grow, hero, plant, fitness];
 
     // const cardDescriptions = [
     //   'This is a description, write whatever you need here, this is just text for a test',

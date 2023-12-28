@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography } from '../../components/typography'
 import { Button } from '../../components/buttons'
-import { CardSlider } from '../../components/carousels'
+import { CardSlider, ImageSlider } from '../../components/carousels'
 import { TextReveal } from '../../components/textSlider'
 
 const ProjectSections = () => {
@@ -14,13 +14,15 @@ const ProjectSections = () => {
             </TextReveal>
             
             
+            <a target='_blank' href='https://dribbble.com/mukeshdan20'>
             <Button responsive={true}>
             View all »
             </Button>
+            </a>
             
         </div>
-        {/* <ImageSlider/> */}
-        <CardSlider/>
+        <ImageSlider/>
+        {/* <CardSlider/> */}
     </div>
   )
 }

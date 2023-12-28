@@ -29,8 +29,9 @@ function Header() {
         ""
         }
         
-
+        <a href='#contact'>
         <Button responsive={true}>looking forward !</Button>
+        </a>
     </div>
   )
 }

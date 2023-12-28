@@ -6,7 +6,7 @@ import { afterloom } from '../../assets/images'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col flex-1 w-full pt-32 pb-10'>
+    <div id='contact' className='flex flex-col flex-1 w-full pt-32 pb-10'>
         <div className='flex flex-col gap-3 '>
         <TextReveal>
         <Typography type="bold36" color='text-light-100'>Relax we got you!</Typography>
@@ -33,7 +33,7 @@ const Footer = () => {
 
         </div>
 
-        <div className='flex flex-1 w-full items-center gap-36 mobile:gap-8 mt-16 py-14 border border-b-background-400'>
+        <div className='flex flex-1 w-full items-center gap-36 mobile:gap-8 mt-16 py-14 border border-b-background-400 hover:cursor-pointer'>
         <Typography type="light64" color='text-light-100' responsive="true" underline='underline'>Instagram</Typography>
         <Typography type="light64" color='text-light-100' responsive="true" underline='underline'>X</Typography>
         <Typography type="light64" color='text-light-100' responsive="true" underline='underline'>Linkedin</Typography>

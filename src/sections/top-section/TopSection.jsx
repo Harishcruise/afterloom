@@ -18,9 +18,11 @@ function TopSection() {
         <Typography type="regular16" color='text-grey-300'>We are a team of creative artists, help businesses to build high quality products.</Typography>
         </TextReveal>
         <div>
+        <a href='#contact'>
         <Button responsive="true">
           Schedule a call right now »
         </Button>
+        </a>
         </div>
         </div>
        
