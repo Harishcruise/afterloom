@@ -26,7 +26,7 @@ const OurFlowSection = () => {
     ]
 
   return (
-    <div className='flex flex-col mobile:gap-24 gap-52'>
+    <div id='flow' className='flex flex-col mobile:gap-24 gap-52'>
     {
         flow.map((data)=><WorkFlow title={data.title} desc={data.desc} img={data.img} number={data.number} />)
     }

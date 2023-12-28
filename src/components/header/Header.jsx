@@ -9,20 +9,21 @@ function Header() {
   const { width } = useWindowDimensions();
 
   return (
-    <div className='flex flex-1 h-[122px] w-full items-center justify-between'>
+    <div className='flex flex-1 h-[122px] mobile:h-[90px] w-full items-center justify-between fixed z-50 bg-[#040404]'>
+      <a href='#'>
         <img alt='' className='w-[150px] mobile:w-[60px] object-contain' src={logo}/>
-
+      </a>
         {width>480 ?
-        <div className='px-6 py-4 flex items-center justify-center gap-4 border-white'>
-        <div className='hover:cursor-pointer hover:opacity-75'>
+        <div className='px-6 py-4 flex items-center justify-center gap-4 border-2 border-background-400 rounded-full'>
+        <a href='#service' className='hover:cursor-pointer hover:opacity-75'>
         <Typography type="regular20" color="text-light-100">Services</Typography>
-        </div>
-        <div className='hover:cursor-pointer hover:opacity-75'>
+        </a>
+        <a href='#work' className='hover:cursor-pointer hover:opacity-75'>
         <Typography type="regular20" color="text-light-100">Works</Typography>
-        </div>
-        <div className='hover:cursor-pointer hover:opacity-75'>
+        </a>
+        <a href='#flow' className='hover:cursor-pointer hover:opacity-75'>
         <Typography type="regular20" color="text-light-100">Our Flow</Typography>
-        </div>
+        </a>
        </div>:
         // 
         ""

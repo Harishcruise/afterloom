@@ -1,7 +1,7 @@
 import React from 'react'
 import { TextReveal } from '../textSlider'
 import { Typography } from '../typography'
-import { copy } from '../../assets/images'
+import { copy, whatsapp, call } from '../../assets/images'
 import { afterloom } from '../../assets/images'
 
 const Footer = () => {
@@ -16,18 +16,18 @@ const Footer = () => {
 
         <div className='flex w-full justify-between py-6 gap-4 flex-wrap'>
 
-            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700'>
+            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
                  <img src={copy} alt='' width={64} height={64} />
                  <Typography type="regular20" color='text-light-100'>Copy our mail!</Typography>
             </div>
 
-            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700'>
-                 <img src={copy} alt='' width={64} height={64} />
+            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
+                 <img src={whatsapp} alt='' width={64} height={64} />
                  <Typography type="regular20" color='text-light-100'>Message us on Whatsapp!</Typography>
             </div>
 
-            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700'>
-                 <img src={copy} alt='' width={64} height={64} />
+            <div className='flex flex-col h-[210px] w-[435px] p-7 justify-between rounded-xl border border-background-700 hover:border-2 hover:border-background-400 hover:cursor-pointer'>
+                 <img src={call} alt='' width={64} height={64} />
                  <Typography type="regular20" color='text-light-100'>Connect on call now!</Typography>
             </div>
 
@@ -41,9 +41,15 @@ const Footer = () => {
 
         <div className='flex flex-1 w-full items-center justify-between py-8'>
             <div className='flex items-center justify-between gap-4'>
+                <a href='#service' className='hover:cursor-pointer'>
                 <Typography type="regular20" color='text-background-400' responsive="true" >Services</Typography>
+                </a>
+                <a href='#work' className='hover:cursor-pointer'>
                 <Typography type="regular20" color='text-background-400' responsive="true" >Works</Typography>
-                <Typography type="regular20" color='text-background-400' responsive="true" >Our Flow</Typography>  
+                </a>
+                <a href='#flow' className='hover:cursor-pointer'>
+                <Typography type="regular20" color='text-background-400' responsive="true" >Our Flow</Typography> 
+                </a> 
             </div>
             <div>
                 <Typography type="regular20" color='text-background-400' responsive="true" >ALL RIGHTS RESERVED. AFTERLOOM. 2023</Typography>

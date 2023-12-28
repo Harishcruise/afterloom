@@ -6,7 +6,7 @@ import { TextReveal } from '../../components/textSlider'
 
 const ProjectSections = () => {
   return (
-    <div className='w-full flex-col flex py-24'>
+    <div id='work' className='w-full flex-col flex py-24'>
         <div className='w-full flex flex-1 justify-between mobile:flex-col mobile:items-start mobile:gap-4'>
             <TextReveal>
             <Typography type="bold36" color='text-light-100'>Our Accomplishments</Typography>

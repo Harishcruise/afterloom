@@ -11,8 +11,9 @@ import Footer from "./components/footer/Footer";
 function App() {
 
   return (
+    <>
+    <Header/>
     <BackgroundWrapper>
-       <Header/>
        <TopSection/>
        <ServiceSection/>
       <TextReveal>
@@ -22,6 +23,7 @@ function App() {
       <OurFlowSection/>
       <Footer/>
     </BackgroundWrapper>
+    </>
   );
 }
 
